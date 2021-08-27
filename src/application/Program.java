@@ -17,9 +17,15 @@ public class Program {
 				+ "");
 		System.out.println();
 		System.out.println();
-		System.out.println("KIT DE PRIMEIROS SOCORROS:");
+		System.out.printf("KIT DE PRIMEIROS SOCORROS:"
+				+ "%n git clean df e git checkout -- . --> desfaz tudo que foi feito desde o último commit"
+				+ "%n git reset --soft HEAD~1 --> remove o último commit, porém mantendos arquivos do jeito que estão"
+				+ "%n git reset --hard HEAD~1 --> remove o último commit, inclusive todas as modificações feitas nos arquivos"
+				+ "%n git checkout <código do commit> --> para voltar ao commit informado de modo a fazer uma consulta como estava o código antes (não pode fazer alterações no código)"
+				+ "%n git checkout master --> retorna ao último commit após ter tido um checkout para um outro commit"
+				+ "%n git push -f origin HEAD^:master --> apagar o último commit no Github"
+				+ "%n git remote set-url origin https://... --> muda o meu repositório remoto 'origin'");
 		
-
 	}
 
 }
